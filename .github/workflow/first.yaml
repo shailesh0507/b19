@@ -5,7 +5,10 @@ on:
 
 jobs:
   run-additio:
-   runs-on: ubuntu-latest
-   steps:
-   -name: print name
-   run: echo"hello workflow"
+    runs-on: [self-hosted, linux]
+
+    steps:
+      - name: Create a new file
+        run: |
+          echo "test" > report.txt
+          cat report.txt
