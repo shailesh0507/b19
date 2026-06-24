@@ -6,13 +6,12 @@ on:
 jobs:
   first:
     runs-on: ubuntu-latest
-
     steps:
       - name: Print Message
-        run: echo "Hello Guys How are you this is first stage"
-second-job: 
-  runs on: ubuntu-latest
+        run: echo "Hello Guys How are you"
+
+  second-job:
+    runs-on: ubuntu-latest
     steps:
-      - name: Print Message for second job  are
-        run: echo "this is second stage" 
-        
+      - name: Print Message for second job
+        run: echo "this is second stage"
