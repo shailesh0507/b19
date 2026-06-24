@@ -4,14 +4,8 @@ on:
   push:
 
 jobs:
-  first:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print Message
-        run: echo "Hello Guys How are you"
-
-  second-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print Second Job Message
-        run: echo "This is second stage"
+  run-additio:
+   runs-on: ubuntu-latest
+   steps:
+   -name: print name
+   run: echo"hello workflow"
