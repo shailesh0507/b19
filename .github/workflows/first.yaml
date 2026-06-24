@@ -1,0 +1,17 @@
+name: b11-workflow
+
+on:
+  push:
+
+jobs:
+  first:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First Job
+        run: echo "FIRST JOB"
+
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Second Job
+        run: echo "SECOND JOB"
