@@ -4,14 +4,11 @@ on:
   push:
 
 jobs:
-  first:
-    runs-on: ubuntu-latest
-    steps:
-      - name: First Job
-        run: echo "FIRST JOB"
+  run-addition:
+    runs-on: [self-hosted, linux]
 
-  second-job:
-    runs-on: ubuntu-latest
     steps:
-      - name: Second Job
-        run: echo "SECOND JOB"
+      - name: Create a new file
+        run: |
+          echo "test" > report.txt
+          cat report.txt
