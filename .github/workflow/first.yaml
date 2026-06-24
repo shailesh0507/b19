@@ -11,5 +11,3 @@ jobs:
       - name: Print Message
         run: echo "Hello Guys How are you"
         
-        name: show content of etc/passwd
-        run: sudo cat etc/passwd
